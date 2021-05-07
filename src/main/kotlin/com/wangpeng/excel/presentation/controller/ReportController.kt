@@ -2,7 +2,6 @@ package com.wangpeng.excel.presentation.controller
 
 import com.wangpeng.excel.annotation.Column
 import com.wangpeng.excel.annotation.ExcelColumn
-import com.wangpeng.excel.domain.interfaces.IReportServce
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import org.springframework.http.HttpStatus
@@ -23,7 +22,7 @@ import kotlin.reflect.jvm.javaField
 
 
 @RestController
-class ReportController(val reportService: IReportServce) {
+class ReportController {
 	
 	@GetMapping("/excel2")
 	fun getSheet(): ResponseEntity<ByteArray> {
