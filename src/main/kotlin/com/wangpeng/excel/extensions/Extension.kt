@@ -1,4 +1,4 @@
-package com.wangpeng.excel.presentation.controller
+package com.wangpeng.excel.extensions
 
 import com.wangpeng.excel.annotation.Column
 import com.wangpeng.excel.annotation.ExcelColumn
