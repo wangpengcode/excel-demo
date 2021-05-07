@@ -3,20 +3,21 @@ a excel demo in kotlin
 
 1. when you want download excel, just do 
 
-`@GetMapping("/download")
+# 
+
+``
+@GetMapping("/download")
    	fun download(): ResponseEntity<ByteArray> {
-   		
    		val list = listOf(
    			A("123", BigDecimal.TEN),
    			A("778", BigDecimal.TEN)
    		)
    		val a = writeToExcel(list)
-   		
-   		
    		return excelResponseEntity(
    			LocalDateTime.now().toString(), a
    		)
-   	}`
+   	}
+``
  
 2. when you want upload excel, just do
  
