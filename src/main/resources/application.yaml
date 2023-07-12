@@ -1,5 +1,9 @@
 spring:
   application:
     name: excel
+  servlet:
+    multipart:
+      max-file-size: 10240MB
+      max-request-size: 10240MB
 server:
   port: 9090
