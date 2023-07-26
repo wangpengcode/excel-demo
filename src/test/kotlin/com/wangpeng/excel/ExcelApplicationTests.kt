@@ -14,10 +14,10 @@ class ExcelApplicationTests {
 
     @Test
     fun contextLoads() {
-        val reader = BufferedReader(FileReader("/Users/wangpeng/Documents/工作相关/卡bin服务/new-csv/8.csv"))
+        val reader = BufferedReader(FileReader("/Users/wangpeng/Documents/工作相关/卡bin服务/new-csv/4.csv"))
         var line: String? = null
         var sql: String? = null
-        val out = BufferedWriter(FileWriter("/Users/wangpeng/Documents/工作相关/卡bin服务/Archive/8.sql", true))
+        val out = BufferedWriter(FileWriter("/Users/wangpeng/Documents/工作相关/卡bin服务/Archive/4.sql", true))
         try {
             while ((reader.readLine().also { line = it }) != null) {
                 sql = "INSERT INTO fintech_cashier.cy_cardbin_raw_data (start_card_bin_field_1, end_card_bin_field_2, maybe_country_field_3, card_brand_field_4, issuer_field_5, country_field_6, country_code_field_7, country_field_8, field_9, currency_field_10, ddc_field_11, field_12, field_13, field_14, field_15, field_16) VALUES("
